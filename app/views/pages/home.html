@@ -1,10 +1,14 @@
-<div> 
-         <input type = "text" id = "loginInput" /> 
-         <button id = "loginBtn">Login</button> 
-      </div> 
-	
-      <div> 
-         <input type = "text" id = "otherUsernameInput" />
-         <button id = "connectToOtherUsernameBtn">Establish connection</button> 
-      </div> 
-		
+<video autoplay></video>
+
+<script>
+  navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+  var constraints = { audio: false, video: true };
+  var video = document.querySelector("video");
+  function successCallback(stream) {
+    video.src = window.URL.createObjectURL(stream);
+  }
+  function errorCallback(error){
+    console.log("getUserMedia error: ", error);
+  }
+  navigator.getUserMedia(constraints, successCallback, errorCallback);
+</script>

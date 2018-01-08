@@ -1,5 +1,7 @@
 {
   "name": "webrtc",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "simple-peer": "^8.2.0"
+  }
 }
