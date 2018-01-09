@@ -2,6 +2,7 @@
   "name": "webrtc",
   "private": true,
   "dependencies": {
-    "simple-peer": "^8.2.0"
+    "simple-peer": "^8.2.0",
+    "simplewebrtc": "^3.0.1"
   }
 }
